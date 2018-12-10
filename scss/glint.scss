@@ -53,11 +53,11 @@ html{
         position: fixed;
         top: 1.8em;
         right: 2em;
-        width: 30px;
-        height: 30px;
         background: url(../img/iconomenu.png);
         z-index: 30;
         cursor: pointer;
+        padding: 16px;
+        background-color: black;
     }
 
     .menu{
@@ -181,6 +181,11 @@ html{
             margin: 20px auto;
             text-align: center; 
             &:hover{
+               .min-link{
+                color:black;
+                }
+            }    
+            &:hover{
                 background-color: #fff;
                 transition: .5s;
             }
@@ -252,51 +257,86 @@ html{
         letter-spacing: .2rem;
         padding-top: 110px;
         padding-bottom: 10px;
-        @media (min-width: 600px) {
+        @media (min-width: 400px) {
             font-size: 16px; 
         }
-        @media (min-width: 1200px) {
+        @media (min-width: 800px) {
             font-size: 18px; 
+            font-weight: bolder;
         }
+        
     }
     .contenedortwo-glint{
         font-family: "montserrat-medium", sans-serif;
-        font-size: 30px;
+        font-size: 40px;
         color: #fff;
-        text-transform: uppercase;
         padding-bottom: 50px;
-        @media (min-width: 600px) {
+        position: relative;
+            &:after{
+                content: "";
+                width: 270px;
+                height: 1px;
+                position: absolute;
+                left: calc(50% - 135px);
+                bottom: 10px;  
+                background-color: #FFF;
+            }
+        @media (min-width: 400px) {
             font-size: 50px; 
+            &:after{
+                content: "";
+                width: 350px;
+                left: calc(50% - 175px);
+            }
+        }
+        @media (min-width: 800px) {
+            font-size: 70px; 
+            &:after{
+                content: "";
+                width: 530px;
+                left: calc(50% - 265px);
+            }    
         }
         @media (min-width: 1200px) {
-            font-size: 70px; 
+             font-size: 78px;
         }
     }
     .contenedortwo-parrafo{
-        font-family: 'Open Sans', sans-serif;
+        font-family: "lora-regular", serif;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 19px;
+        line-height: 40px;
         color: black;
         width: 70%;
         margin: 0 auto;
+        padding-top: 30px;
         padding-bottom: 50px;
-        @media (min-width: 600px) {
-            font-size: 18px; 
-            line-height: 40px;
-            width: 430px;
+        @media (min-width: 800px) {
+            font-size: 22px;
+            width: 80%;
+           
         }
         @media (min-width: 1200px) {
-            font-size: 20px; 
+            font-size: 25px; 
             line-height: 40px;
-            width: 780px;
+            width: 840px;
+            padding-bottom: 90px;
         }
     }
     
     .contenedortwo-list{
+        padding-bottom: 50px;
         @media (min-width: 600px) {
             width: 400px;
             margin: 0 auto; 
+        }
+        @media (min-width: 800px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 480px;
+            margin: 0 auto;
+           
         }
         @media (min-width: 1200px) {
                display: flex;
@@ -306,27 +346,44 @@ html{
         }
     }
         .contenedortwo-item{
-            @media (min-width: 600px) {
-            
-        
-                
+            position: relative;
+            &:after{
+                content: "";
+                width: 270px;
+                height: 1px;
+                position: absolute;
+                left: calc(50% - 135px);
+                bottom: 30px;  
+                background-color: #FFF;
             }
-            @media (min-width: 1200px) {
-                    
+            &:last-child:after{
+                display: none;
             }
+
+            @media (min-width: 800px) {
+                &:after{
+                   display: none;
+                }   
+            }    
+
         }
             .contenedortwo-link{
                 font-family: "montserrat-bold", sans-serif;
                 font-size: 70px;
+                font-weight: bolder;
                 color: #FFFFFF;
                 text-decoration: none;
+                @media (min-width: 800px) {
+                    font-size: 80px;
+                }
             }
             .contenedortwo-paragraph{
                 font-family: "montserrat-semibold", sans-serif;
                 font-size: 18px;
+                font-weight: bolder;
                 color: #000000;
-                padding-top: 18px;
-                padding-bottom: 68px;
+                padding-top: 25px;
+                padding-bottom: 70px;
             }
     .ir-arriba{
         display: none;
@@ -371,35 +428,85 @@ html{
         width: 85%;
         margin: auto;
         padding-bottom: 80px;
+        &:after{
+            content: "";
+            width: 250px;
+            height: 1px;
+            position: absolute;
+            left: calc(50% - 125px);
+            margin-top: 50px;
+            background-color: #e6e6e6;
+        }
+        @media (min-width: 400px) {
+            font-size: 52px;
+            &:after{
+                width: 300px;
+                left: calc(50% - 150px);
+                margin-top: 100px;
+            }
+        }  
         @media (min-width: 600px) {
             font-size: 52px;
+            &:after{
+                width: 550px;
+                left: calc(50% - 275px);
+                margin-top: 100px;
+            }
         }  
         @media (min-width: 1200px) {
             width: 920px;
             margin:  auto;
+            &:after{
+                content: "";
+                width: 700px;
+                height: 1px;
+                position: absolute;
+                left: calc(50% - 350px);
+                margin-top: 100px;
+                background-color: #e6e6e6;
+            }
         }    
   
     }
     .service-list{
+        padding-top: 22px;
+        padding-bottom: 130px;
+        width: 85%;
+        margin: 0 auto;
         @media (min-width: 800px) {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 90%;
+            width: 600px;
+            margin: 0 auto;
+        }  
+        @media (min-width: 900px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 700px;
             margin: 0 auto;
         }  
         @media (min-width: 1200px) {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            width: 1122px;
+            width: 1100px;
             margin: 0 auto;
+            padding-bottom: 100px;
         }    
 
     }
         .service-item{
-            @media (min-width: 1200px) {
+            padding-bottom: 20px;
+            @media (min-width: 800px) {
+                width: 255px;
+                padding-bottom: 20px;
                 
+            }  
+            @media (min-width: 1200px) {
+                width: 435px;
+                padding-bottom: 20px;
             }    
     
         }
@@ -408,28 +515,36 @@ html{
                 font-size: 24px;
                 color: #000000;
                 text-align: center;
-                padding-bottom: 16px;
+                padding-bottom: 18px;
                 @media (min-width: 600px) {
                     font-size: 28px;
+                }
+                @media (min-width: 1200px) {
+                    text-align: left;
                 }    
             }
             .service-text{
                 font-family: "lora-regular", serif;
-                font-size: 18px;
+                font-size: 19px;
                 line-height: 1.765;
                 color: #757575;
                 text-align: center;
-                width: 85%;
-                margin: auto;
                 padding-bottom: 20px;
                 @media (min-width: 400px) {
                     font-size: 20px;
-                    width: 430px;
                 } 
                 @media (min-width: 800px) {
-                    width: 256px;
-                    margin: 0 auto;
-                }     
+                   width: 255px;
+                   text-align: left;
+                }
+                @media (min-width: 900px) {
+                    width: 340px;
+                   
+                }  
+                @media (min-width: 1200px) {
+                    width: 435px;
+                    text-align: left;
+                }    
             }
 
     
