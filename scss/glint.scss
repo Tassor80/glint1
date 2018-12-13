@@ -17,7 +17,10 @@ html{
 
 .contenedor{
     width: 100%; height: 100%;
-    background: url('../img/hero-bg.jpg?s=988888') no-repeat center 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url('../img/hero-bg.jpg?s=988888') no-repeat center 0;
     background-size: cover;
 }
 
@@ -589,7 +592,6 @@ html{
     .wrapper{
         width: 100%;
         margin-top: 100px;
-        margin-bottom: 100px;
         background: #e6e6e6;
         padding: 30px 0;
     }
@@ -652,7 +654,18 @@ html{
 //Bloque contact
 
 .contact{
-    background: url('../img/contact-bg.jpg?s=988888') no-repeat center 0;
+    background:  linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url('../img/contact-bg.jpg?s=988888') no-repeat center 0;
+    height: 1500px; 
+    @media (min-width: 600px) {
+        height: 1650px; 
+    } 
+    @media (min-width: 1000px) {
+        height: 1100px;
+     }
+    
 }
     .contact-sudhead{
         font-family: "montserrat-bold", sans-serif;
@@ -674,22 +687,51 @@ html{
         line-height: 1.333;
         color: #fff;
         padding-top: 10px;
-        padding-bottom: 70px;
+        padding-bottom: 55px;
         text-align: center;
         @media (min-width: 600px) {
             font-size: 36px;
-            width: 440px;
+            width: 65%;
             margin: auto;
+        }
+        @media (min-width: 1200px) {
+            font-size: 46px;
+            width: 40%;
+         }
+    }
+    .contact-container{
+        @media (min-width: 600px) {
+            width: 525px;
+            margin: 0 auto;
+            opacity: .9;
+            background-color: #151515;
+        }
+        @media (min-width: 1000px) {
+           display: flex;
+           justify-content: space-between;
+           width: 900px;
+        }
+        .contact-cont{
+            @media (min-width: 1000px) {
+                margin-left: 25px;
+                height: 620px;
+            }
+            
         }
     }
     .contact-cont-title{
         font-family:  "montserrat-medium", sans-serif;
-        font-size: 15px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: .25rem;
         color: #fff;
         text-align: center;
-        padding-bottom: 110px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @media (min-width: 1000px) {
+            text-align: left;
+            margin-left: 25px;
+        }
     }
     .contact-cont-form{
         text-align: center;
@@ -705,6 +747,12 @@ html{
             padding: 1.2em;
             margin: 0 auto 1em;
             width: 75%;
+            @media (min-width: 600px) {
+                width: 65%;
+            }
+            @media (min-width: 1000px) {
+                width: 485px;
+            }
         }
     .contact-cont-textarea{
         background: none;
@@ -717,6 +765,12 @@ html{
             padding: 1.2em;
             margin: 0 auto 1em;
             width: 75%;
+            @media (min-width: 600px) {
+                width: 65%;
+            }
+            @media (min-width: 1000px) {
+                width: 485px;
+            }
     }  
     .contact-cont-buttom{
         font-family: "lora-regular", serif;
@@ -729,10 +783,23 @@ html{
         padding: 1.5em;
         width: 75%;
         text-transform: uppercase;
+        @media (min-width: 600px) {
+            width: 65%;
+        }
+        @media (min-width: 1000px) {
+            width: 516px;
+            margin: 127px auto ;
+        }
     }
 .contact-cont2{
     padding-top: 60px;
     padding-bottom: 100px;
+    @media (min-width: 1000px) {
+       background-color: #111111; 
+       padding-top: 20px;
+       padding-bottom: 0px;
+       width: 315px;
+    }
 }  
     .contact-cont2-sudhead{
         font-family: "lora-regular", serif;
@@ -742,9 +809,17 @@ html{
         text-align: center;
         padding-top: 40px;
         padding-bottom: 20px;
+        @media (min-width: 1000px) {
+           text-align: left; 
+           margin-left: 50px;
+        }
     }
     .contact-cont2-list{
         text-align: center;
+        @media (min-width: 1000px) {
+            text-align: left; 
+            margin-left: 50px;
+        }
     }
         .contact-cont2-link{
             text-decoration: none;
@@ -754,3 +829,20 @@ html{
             color: #757575;
             line-height: 40px;
         }
+
+//Bloque footer
+
+footer{
+    background-color: #111111;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .pie{
+        font-family: "lora-regular", serif;
+        font-size: 18px;
+        color: #757575;
+        text-align: center;
+        width: 170px;
+        margin: 0 auto;
+    }
+}
