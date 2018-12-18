@@ -390,74 +390,74 @@ html {
         background-color: #e6e6e6; } }
 
 .service-list {
-  padding-top: 22px;
-  padding-bottom: 130px;
+  padding-top: 1.375rem;
+  padding-bottom: 8.125rem;
   width: 85%;
   margin: 0 auto; }
-  @media (min-width: 800px) {
+  @media (min-width: 50rem) {
     .service-list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 600px;
+      width: 37.5rem;
       margin: 0 auto; } }
-  @media (min-width: 900px) {
+  @media (min-width: 56.25rem) {
     .service-list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 700px;
+      width: 43.75rem;
       margin: 0 auto; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 75rem) {
     .service-list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 1100px;
+      width: 68.75rem;
       margin: 0 auto;
-      padding-bottom: 100px; } }
+      padding-bottom: 6.25rem; } }
   .service-list .service-item {
-    padding-bottom: 20px; }
-    @media (min-width: 800px) {
+    padding-bottom: 1.25rem; }
+    @media (min-width: 50rem) {
       .service-list .service-item {
-        width: 255px;
-        padding-bottom: 20px; } }
-    @media (min-width: 1200px) {
+        width: 15.9375rem;
+        padding-bottom: 1.25rem; } }
+    @media (min-width: 75rem) {
       .service-list .service-item {
-        width: 435px;
-        padding-bottom: 20px; } }
+        width: 27.1875rem;
+        padding-bottom: 1.25rem; } }
     .service-list .service-item .service-title2 {
       font-family: "montserrat-medium", sans-serif;
-      font-size: 24px;
+      font-size: 1.5rem;
       color: #000000;
       text-align: center;
-      padding-bottom: 18px; }
-      @media (min-width: 600px) {
+      padding-bottom: 1.125rem; }
+      @media (min-width: 37.5rem) {
         .service-list .service-item .service-title2 {
-          font-size: 28px; } }
-      @media (min-width: 1200px) {
+          font-size: 1.75rem; } }
+      @media (min-width: 75rem) {
         .service-list .service-item .service-title2 {
           text-align: left; } }
     .service-list .service-item .service-text {
       font-family: "lora-regular", serif;
-      font-size: 19px;
+      font-size: 1.1875rem;
       line-height: 1.765;
       color: #757575;
       text-align: center;
-      padding-bottom: 20px; }
-      @media (min-width: 400px) {
+      padding-bottom: 1.25rem; }
+      @media (min-width: 25rem) {
         .service-list .service-item .service-text {
-          font-size: 20px; } }
-      @media (min-width: 800px) {
+          font-size: 1.25rem; } }
+      @media (min-width: 50rem) {
         .service-list .service-item .service-text {
-          width: 255px;
+          width: 15.9375rem;
           text-align: left; } }
-      @media (min-width: 900px) {
+      @media (min-width: 56.25rem) {
         .service-list .service-item .service-text {
-          width: 340px; } }
-      @media (min-width: 1200px) {
+          width: 21.25rem; } }
+      @media (min-width: 75rem) {
         .service-list .service-item .service-text {
-          width: 435px;
+          width: 27.1875rem;
           text-align: left; } }
 
 .testimonial {
@@ -494,13 +494,15 @@ html {
   width: 100%;
   margin-top: 100px;
   background: #e6e6e6;
-  padding: 30px 0; }
+  padding: 0; }
 
-@media (min-width: 1200px) {
-  .slider-testimonial {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto; } }
+.slider-testimonial {
+  padding-bottom: 100px; }
+  @media (min-width: 1200px) {
+    .slider-testimonial {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto; } }
 
 .testimonial-client {
   margin-bottom: 15px; }
@@ -517,24 +519,31 @@ html {
   text-align: center; }
 
 .testimonial-text {
-  padding: 10px 120px; }
+  padding: 10px 60px; }
+  @media (min-width: 600px) {
+    .testimonial-text {
+      padding: 10px 100px; } }
+  @media (min-width: 800px) {
+    .testimonial-text {
+      padding: 10px 110px; } }
   @media (min-width: 1200px) {
     .testimonial-text {
-      font-size: 33px;
-      line-height: 1.8;
-      width: 860px;
-      margin: 0 auto; } }
+      padding: 10px 120px; } }
 
 .testimonial-text p {
   font-family: "lora-regular", serif;
   color: #555555;
-  text-align: center; }
-  @media (min-width: 399px) {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.4; }
+  @media (min-width: 500px) {
     .testimonial-text p {
-      font-size: 20px;
-      line-height: 1.6;
-      width: 100%;
-      margin: auto; } }
+      font-size: 24px;
+      line-height: 1.8; } }
+  @media (min-width: 800px) {
+    .testimonial-text p {
+      font-size: 26px;
+      line-height: 1.8; } }
   @media (min-width: 1200px) {
     .testimonial-text p {
       font-size: 33px;
@@ -542,76 +551,76 @@ html {
 
 .contact {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/contact-bg.jpg?s=988888") no-repeat center 0;
-  height: 1500px; }
-  @media (min-width: 600px) {
+  height: 93.75rem; }
+  @media (min-width: 37.5rem) {
     .contact {
-      height: 1650px; } }
-  @media (min-width: 1000px) {
+      height: 103.125rem; } }
+  @media (min-width: 62.5rem) {
     .contact {
-      height: 1100px; } }
+      height: 68.75rem; } }
   .contact .contact-sudhead {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bolder;
     text-transform: uppercase;
     letter-spacing: .25rem;
     color: #39b54a;
-    padding-top: 120px;
+    padding-top: 7.5rem;
     text-align: center; }
-    @media (min-width: 600px) {
+    @media (min-width: 37.5rem) {
       .contact .contact-sudhead {
-        font-size: 17px; } }
+        font-size: 1.0625rem; } }
   .contact .contact-title {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bolder;
     line-height: 1.333;
     color: #fff;
-    padding-top: 10px;
-    padding-bottom: 55px;
+    padding-top: 0.625rem;
+    padding-bottom: 3.4375rem;
     text-align: center;
     width: 80%;
     margin: 0 auto; }
-    @media (min-width: 600px) {
+    @media (min-width: 37.5rem) {
       .contact .contact-title {
-        font-size: 36px;
+        font-size: 2.25rem;
         width: 65%;
         margin: auto; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 75rem) {
       .contact .contact-title {
-        font-size: 46px;
+        font-size: 2.875rem;
         width: 40%; } }
   .contact .contact-container {
     opacity: .9;
     background-color: #151515; }
-    @media (min-width: 600px) {
+    @media (min-width: 37.5rem) {
       .contact .contact-container {
-        width: 525px;
+        width: 32.8125rem;
         margin: 0 auto;
         opacity: .9;
         background-color: #151515; } }
-    @media (min-width: 1000px) {
+    @media (min-width: 62.5rem) {
       .contact .contact-container {
         display: flex;
         justify-content: space-between;
-        width: 900px; } }
-    @media (min-width: 1000px) {
+        width: 56.25rem; } }
+    @media (min-width: 62.5rem) {
       .contact .contact-container .contact-cont {
-        margin-left: 25px;
-        height: 620px; } }
+        margin-left: 1.5625rem;
+        height: 38.75rem; } }
     .contact .contact-container .contact-cont .contact-cont-title {
       font-family: "montserrat-medium", sans-serif;
-      font-size: 14px;
+      font-size: 0.875rem;
       text-transform: uppercase;
       letter-spacing: .25rem;
       color: #fff;
       text-align: center;
-      padding-top: 60px;
-      padding-bottom: 60px; }
-      @media (min-width: 1000px) {
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem; }
+      @media (min-width: 62.5rem) {
         .contact .contact-container .contact-cont .contact-cont-title {
           text-align: left;
-          margin-left: 25px; } }
+          margin-left: 1.5625rem; } }
     .contact .contact-container .contact-cont .contact-cont-form {
       text-align: center; }
       .contact .contact-container .contact-cont .contact-cont-form .contact-cont-formInput {
@@ -619,18 +628,18 @@ html {
         border-top: none;
         border-right: none;
         border-left: none;
-        border-bottom: 1px #555555 solid;
+        border-bottom: 0.0625rem #555555 solid;
         display: block;
         margin-bottom: 1em;
         padding: 1.2em;
         margin: 0 auto 1em;
         width: 75%; }
-        @media (min-width: 600px) {
+        @media (min-width: 37.5rem) {
           .contact .contact-container .contact-cont .contact-cont-form .contact-cont-formInput {
             width: 65%; } }
-        @media (min-width: 1000px) {
+        @media (min-width: 62.5rem) {
           .contact .contact-container .contact-cont .contact-cont-form .contact-cont-formInput {
-            width: 485px; } }
+            width: 30.3125rem; } }
       .contact .contact-container .contact-cont .contact-cont-form .contact-cont-textarea {
         background: none;
         border-top: none;
@@ -642,75 +651,75 @@ html {
         padding: 1.2em;
         margin: 0 auto 1em;
         width: 75%; }
-        @media (min-width: 600px) {
+        @media (min-width: 37.5rem) {
           .contact .contact-container .contact-cont .contact-cont-form .contact-cont-textarea {
             width: 65%; } }
-        @media (min-width: 1000px) {
+        @media (min-width: 62.5rem) {
           .contact .contact-container .contact-cont .contact-cont-form .contact-cont-textarea {
-            width: 485px; } }
+            width: 30.3125rem; } }
       .contact .contact-container .contact-cont .contact-cont-form .contact-cont-buttom {
         font-family: "lora-regular", serif;
-        font-size: 14px;
+        font-size: 0.875rem;
         background: #39b54a;
         color: #FFF;
         border: none;
         display: block;
-        margin: 40px auto;
+        margin: 2.5rem auto;
         padding: 1.5em;
         width: 75%;
         text-transform: uppercase; }
-        @media (min-width: 600px) {
+        @media (min-width: 37.5rem) {
           .contact .contact-container .contact-cont .contact-cont-form .contact-cont-buttom {
             width: 65%; } }
-        @media (min-width: 1000px) {
+        @media (min-width: 62.5rem) {
           .contact .contact-container .contact-cont .contact-cont-form .contact-cont-buttom {
-            width: 516px;
-            margin: 127px auto; } }
+            width: 32.25rem;
+            margin: 7.9375rem516 auto; } }
     .contact .contact-container .contact-cont2 {
-      padding-top: 60px;
-      padding-bottom: 100px; }
-      @media (min-width: 1000px) {
+      padding-top: 3.75rem;
+      padding-bottom: 6.25rem; }
+      @media (min-width: 62.5rem) {
         .contact .contact-container .contact-cont2 {
           background-color: #111111;
-          padding-top: 20px;
+          padding-top: 1.25rem;
           padding-bottom: 0px;
-          width: 315px; } }
+          width: 19.6875rem; } }
       .contact .contact-container .contact-cont2 .contact-cont2-sudhead {
         font-family: "lora-regular", serif;
-        font-size: 19px;
+        font-size: 1.1875rem;
         font-weight: bolder;
         color: #39b54a;
         text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px; }
-        @media (min-width: 1000px) {
+        padding-top: 2.5rem;
+        padding-bottom: 1.25rem; }
+        @media (min-width: 62.5rem) {
           .contact .contact-container .contact-cont2 .contact-cont2-sudhead {
             text-align: left;
-            margin-left: 50px; } }
+            margin-left: 3.125rem; } }
       .contact .contact-container .contact-cont2 .contact-cont2-list {
         text-align: center; }
-        @media (min-width: 1000px) {
+        @media (min-width: 62.5rem) {
           .contact .contact-container .contact-cont2 .contact-cont2-list {
             text-align: left;
-            margin-left: 50px; } }
+            margin-left: 3.125rem; } }
         .contact .contact-container .contact-cont2 .contact-cont2-list .contact-cont2-link {
           text-decoration: none;
           font-family: "lora-regular", serif;
           font-weight: 100;
-          font-size: 18px;
+          font-size: 1.125rem;
           color: #757575;
-          line-height: 40px; }
+          line-height: 2.5rem; }
 
 footer {
   background-color: #111111;
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem; }
   footer .pie {
     font-family: "lora-regular", serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #757575;
     text-align: center;
-    width: 170px;
+    width: 10.625rem;
     margin: 0 auto; }
 
 /*# sourceMappingURL=glint.css.map */
